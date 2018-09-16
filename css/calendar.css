@@ -1,0 +1,173 @@
+.calHead {
+    text-align: center;
+}
+.calMonth {
+    text-align: center;
+    display: inline;
+}
+.week li {
+    list-style-type: none;
+    display: inline;
+    margin: 7px;
+}
+.calTitle {
+    border-bottom: 1px solid #e4e4e4;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.calendar {
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.calDay {
+    color: #666;
+    font-size: 0.8em;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.calWeekend {
+    background-color: #fafafa;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 7px;
+}
+.calDayOther {
+    color: #aaa;
+}
+#centered {
+    margin: 0 auto;
+}
+.calExp:after {
+    display: table;
+    clear: both;
+}
+.rows {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.rows ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.rows ul li {
+    height: auto !important;
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -1px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    margin-right: -1px;
+}
+.date {
+    float: none;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 28px;
+    border-radius: 50%;
+}
+.event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #fff;
+    border: 1px solid #254a83;
+}
+.event-desc {
+    display: block;
+    margin: 3px 0 7px 0;
+    color: #254a83;
+    text-decoration: underline;
+}
+.event-time {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+.hourly {
+    font-size: 4em;
+    margin-bottom: -0.5em;
+}
+.minutely {
+    font-size: 1em;
+    text-align: right;
+    vertical-align: top;
+    width: 1%;
+    height: 1.5em;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+.daily {
+    vertical-align: top;
+    border: solid 1px #6b6521;
+    font-size: 1em;
+    background-color: rgb(255,255,153);
+
+}
+.dailyCourse {
+    height: 24em;
+    overflow: hidden;
+    color: black;
+    font-weight: normal;
+    font-size: 11px;
+}
+.blankTime {
+    font-size: 1em;
+    border-top: 1px solid #C0C0C0;
+    background-color: #FFF;
+}
+.minutelyTop {
+    border-top: 1px solid black;
+}
+
+a.accordion-toggle {
+	display: block;
+	padding: 10px 15px;
+}
+
+div.panel-heading {
+	padding: 0;
+}
+table{
+	/*table-layout: fixed;*/
+	width: 100%;
+}
+
+ul.nav.nav-tabs.date-tabs li{
+    margin-right: 1em;
+}
+
+.date-tabs li{
+    display: inline;
+    margin: .5em;
+}
+.ttday{
+    display:none;
+}
+#MondayTab{
+    display:block;
+}
+
+.deadline{
+    background-color: rgb(255,255,153);
+}

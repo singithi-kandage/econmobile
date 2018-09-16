@@ -1,0 +1,613 @@
+<!DOCTYPE HTML>
+<!--
+	Focal Point by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+	<title>Homepage - Conestoga College</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<!-- Bootsrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Main -->
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="homepage">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Content Wrapper -->
+		<div id="content-wrapper">
+
+			<p class="page-heading">Account Settings</p>
+
+			<!-- Tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a id="accountSettings" class="nav-link active" data-toggle="tab" href="#account-settings-pane" role="tab">Account Settings</a>
+				</li>
+				<li class="nav-item">
+					<a id="discussions" class="nav-link" data-toggle="tab" href="#discussions-pane" role="tab">Discussions</a>
+				</li>
+				<li class="nav-item">
+					<a id="courseMail" class="nav-link" data-toggle="tab" href="#course-mail-pane" role="tab">Course Mail</a>
+				</li>
+			</ul>
+
+			<!-- Tab Panes -->
+			<div class="tab-content bordered-tab-pane">
+
+				<!-- Account Settings Tab Pane (Active) -->
+				<div class="tab-pane active" id="account-settings-pane" role="tabpanel">
+
+					<div class="section bottom-bordered">
+						
+						<!-- Font Settings -->
+						<p class=info>Font Settings</p>
+
+						<label>Font Size</label>
+
+						<div class="row">
+							<div class="form-group col-6">
+								<select class="form-control">
+									<option>Small</option>
+									<option>Medium</option>
+									<option>Large</option>
+									<option>Huge</option>
+								</select>
+							</div>
+						</div>
+
+						<label>Readability</label>
+
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">Use the OpenDyslexic font to improve readability</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Dialog Settings-->
+					<div class="section bottom-bordered">
+
+						<p class=info>Dialog Setting</p>
+						<br/>
+
+						<p class="disclaimer">
+							You should change modal dialogs to pop-ups if a) you primarily view the website on a small device, b) you primarily view
+							the website with style sheets disabled, or c) you use an assistive technology (such as a screen reader, screen magnifier
+							or voice software) that benefit from simpler page designs.
+						</p>
+						<br/>
+
+						<label>Show secondary window as</label>
+
+						<div class="form-group">
+
+							<div class="row">
+								<div class="col-1">
+									<input type="radio" value="" checked="checked" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Dialogs</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="radio" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Popups</span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- HTML Editor Settings -->
+					<div class="section bottom-bordered">
+						<p class=info>HTML Editor Settings</p>
+						<br/>
+
+						<p class="disclaimer">
+							The HTML editor enables you to enter text and HTML in the system. It has many additional rich text features. If you use assistive
+							technology such as screen readers, some of these features might be difficult to navigate.
+						</p>
+						<br/>
+
+						<label>HTML Editor</label>
+
+
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">Turn off rich text editor and view source</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Reading Content -->
+					<div class="section bottom-bordered">
+
+						<p class=info>Reading Content</p>
+						<br/>
+
+						<p class="disclaimer">
+							Some tools automatically mark content as read as you scroll it into view. If you use an assistive technology such as a screen
+							reader then you may wish to disable this feature by checking the box below.
+						</p>
+						<br/>
+
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">Do not automatically mark items as read as the page scrolls</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Video Settings -->
+					<div class="section bottom-bordered">
+						<p class=info>Video Settings</p>
+						<br/>
+
+						<p class="disclaimer">
+							This setting ensures assistive technologies can detect videos. As a consequence, videos will overlap menus. It does not influence
+							the accessibility of specific players.
+						</p>
+						<br/>
+
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">Optimize video presentation for programmatically-driven assistive technologies</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Locale and Language-->
+					<div class="section bottom-bordered">
+
+						<p class=info>Locale & Language</p>
+						<br/>
+
+						<label>Show secondary window as</label>
+
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>-- Default -- English(United States)</option>
+								<option>English(United States)</option>
+								<option>Francais(Canada)</option>
+								<option>中文(中华人民共和国)</option>
+							</select>
+						</div>
+
+						<p class="disclaimer">
+							You may change the default calendar, date, time, and number formats set by your organization. Some courses may override your
+							selections.
+						</p>
+						<br/>
+
+						<label>First Day of the Week</label>
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>-- Default -- (12 Hour AM/PM)</option>
+								<option>12 Hour AM/PM</option>
+								<option>24 Hour</option>
+							</select>
+						</div>
+
+						<label>Date</label>
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>-- Default -- (M/d/yyyy)</option>
+								<option>d/M/yyyy</option>
+								<option>dd.MM.yyyy</option>
+								<option>dd/MM/yyyy</option>
+								<option>dd-MM-yyyy</option>
+								<option>M/d/yyyy</option>
+								<option>MM/dd/yyyy</option>
+								<option>yyyy/M/d</option>
+								<option>yyyy/MM/dd</option>
+								<option>yyyy-MM-dd</option>
+							</select>
+						</div>
+
+						<label>Number Format</label>
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>-- Default -- (1,234,567.890)</option>
+								<option>d/M/yyyy</option>
+								<option>dd.MM.yyyy</option>
+								<option>dd/MM/yyyy</option>
+								<option>dd-MM-yyyy</option>
+								<option>M/d/yyyy</option>
+								<option>MM/dd/yyyy</option>
+								<option>yyyy/M/d</option>
+								<option>yyyy/MM/dd</option>
+								<option>yyyy-MM-dd</option>
+							</select>
+						</div>
+
+						<label>Percentage Format</label>
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>-- Default -- (-58%)</option>
+								<option>d/M/yyyy</option>
+								<option>dd.MM.yyyy</option>
+								<option>dd/MM/yyyy</option>
+								<option>dd-MM-yyyy</option>
+								<option>M/d/yyyy</option>
+								<option>MM/dd/yyyy</option>
+								<option>yyyy/M/d</option>
+								<option>yyyy/MM/dd</option>
+								<option>yyyy-MM-dd</option>
+							</select>
+						</div>
+
+					</div>
+
+					<!-- Time Zone -->
+					<div class="section bottom-bordered">
+						<p class=info>Time Zone</p>
+						<br/>
+
+						<p class="disclaimer">
+							You can set your preferred time zone, which will show all of your times with dates in that time zone.
+						</p>
+						<br/>
+
+						<label>Continent</label>
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>Americas</option>
+								<option>Africa</option>
+								<option>Asia</option>
+								<option>Europe</option>
+								<option>Oceania</option>
+							</select>
+						</div>
+						<p class="disclaimer">
+							Select a continent to populate the list of time zones.
+						</p>
+						<br/>
+
+						<label>Time Zone</label>
+						<div class="form-group">
+							<select class="form-control col-10">
+								<option>GMT-5:00 Canada - Toronto</option>
+								<option>Africa</option>
+								<option>Asia</option>
+								<option>Europe</option>
+								<option>Oceania</option>
+							</select>
+						</div>
+						<p class="disclaimer">
+							Offset in hours from UTC, time zone name.
+						</p>
+						<br/>
+					</div>
+
+					<!-- Signing In-->
+					<div class="section bottom-bordered">
+
+						<p class=info>Signing In</p><br/>
+
+						<label>Show secondary window as</label>
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-1">
+									<input type="radio" value="" checked="checked" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Appear online (when I'm logged in)</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="radio" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Always appear offline</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Application Settings -->
+					<div class="section">
+
+						<p class=info>Application Settings</p><br/>
+
+						<p class="disclaimer">
+							Applications registered to your account can access the system on your behalf.
+						</p>
+						<br/>
+
+						<label>OAuth 2.0</label>
+						<p class="disclaimer">
+							You can revoke authentication of each application registered using OAuth 2.0 individually.
+						</p>
+						<br/>
+
+						<a>
+							<p>Manage applications registered with OAuth 2.0</p>
+						</a>
+
+						<label>ID Key Authorization</label>
+
+						<p class="disclaimer">
+							You can revoke the authentication of all applications registered through the ID Key Authorization system by clicking the
+							Revoke Access button below. This will force all applications registered through ID Key Authorization to renew their
+							authentication.
+						</p>
+						<br/>
+						<button class="left btn">Revoke Access</button>
+						<br/>
+						<br/>
+
+						<p class="info">Application Settings</p>
+						<br/>
+
+						<p class="disclaimer">
+							Disconnect from
+							<a>Binder</a>
+						</p>
+						<br/>
+						<button class="left btn">Log out of Binder</button>
+
+
+					</div>
+
+				</div>
+
+				<!-- Discussions Tab Pane -->
+				<div class="tab-pane" id="discussions-pane" role="tabpanel">
+
+					<div class="section">
+						<p class=info>Personal Settings</p>
+						<br/>
+
+						<label>Display Settings</label>			
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">Always show the Discussions List pane</p>
+							</div>
+						</div><br/>
+
+						<label>Reply Settings</label>
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">Include original post in reply</p>
+							</div>
+						</div><br/>
+
+						<label>Subscription Settings</label>
+						<div class="form-group row">
+							<div class="col-1">
+								<input type="checkbox" value="" /> 
+							</div>
+							<div class="col-11">
+								<p class="checkbox-label">When creating a new thread, subscribe to the thread by default</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- Course Mail Tab Pane-->
+				<div class="tab-pane" id="course-mail-pane" role="tabpanel">
+
+					<div class="section">
+
+						<p class="info">Email Options</p>
+						<br/>
+
+						<div class="form-group">
+								
+							<div class="row">
+								<div class="col-1">
+									<input type="checkbox" value="" checked="checked" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Track activity for messages sent to internal email addresses</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="checkbox"  value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Include original message in email replies</span>
+								</div>
+							</div>
+							<div class="row">
+									<div class="col-1">
+											<input type="checkbox" value="" />
+									</div>
+									<div class="col-11">
+										<span class="checkbox-label">Save a copy of each outgoing message to the Sent Mail folder</span>
+									</div>
+								</div>
+
+						</div>
+
+						<label>Email Signature</label>
+						<textarea class="form-control"></textarea>
+						<br/>
+
+						<p class=info>Display Options</p>
+						<br/>
+
+						<div class="form-group">
+								
+							<div class="row">
+								<div class="col-1">
+									<input type="checkbox" value="" checked="checked" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Show the Message Preview pane</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="checkbox" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Show the Folder List pane</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="checkbox" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Mark messages as read when viewed in the Message Preview pane</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="checkbox" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Show internal email addresses in the Address Book</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="checkbox" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Allow filtering messages and contacts on group enrollment/span>
+								</div>
+							</div>
+						</div>			
+
+						<p class=info>Forward Options</p>
+						<br/>
+
+						<div class="form-group">
+								
+							<div class="row">
+								<div class="col-1">
+									<input type="checkbox" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Forward incoming messages to an alternate email account</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="offset-1 col-11">
+									<span class="checkbox-label">Forwarding Address</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="offset-1 col-11">
+									<input class="form-control" type="text" value="Kgirard@conestogac.on.ca" disabled/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="radio" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Forward and delete from the Inbox folder</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="radio" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Forward and mark unread in the Inbox folder</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1">
+										<input type="radio" value="" />
+								</div>
+								<div class="col-11">
+									<span class="checkbox-label">Forward and mark read in the Inbox folder</span>
+								</div>
+							</div>
+						</div>			
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<section id="footer">
+				<p>Faculty and students are responsible for ensuring that all material uploaded, copied, displayed and communicated through
+					eConestoga is in compliance with the Canadian Copyright Act and the Conestoga Fair Dealing Policy. To learn more about
+					copyright, review the Library Resource Centre’s copyright guides for Faculty and Staff and Students.
+				</p>
+			</section>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy; Conestoga College
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Save Buttons -->
+	<div class="save-buttons">
+		<button type="button" class="btn btn-primary save-button">Save and Close</button>
+		<button type="button" class="btn save-button">Save</button>
+		<button type="button" class="btn close-button">Close</button>
+	</div>
+
+
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script src="js/jquery.selectorr.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-viewport.min.js"></script>
+	<script src="js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		var foo = $('#titleBar > ul');
+		foo.dropotron();
+	</script>
+
+
+</body>
+
+</html>

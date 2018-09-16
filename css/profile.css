@@ -1,0 +1,28 @@
+.row{
+    margin-bottom: .5em;
+}
+.info {
+    text-align: center;
+}
+#top-barrier {
+    border-top: 3px solid black;
+}
+.profile-link {
+    font-size: 2em;
+}
+
+/* Profile Intro*/
+#profile-col{
+    text-align: center;
+    padding: 2em;
+}
+#change-picture{
+    width: auto;
+    white-space: pre-wrap;
+    line-height: 1.2em;
+}
+#profile-picture{
+    width: 100%;
+    padding-bottom: .5em;
+}
+

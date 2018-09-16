@@ -1,0 +1,124 @@
+h3{
+    text-align:left;
+}
+h3.link{
+    color: rgb(41, 148, 219)
+}
+.announce {
+   display: block;
+}
+
+.announcement{
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+span.previous-button.icon.fa-angle-left, span.next-button.icon.fa-angle-right{
+    user-select: none;
+}
+
+/* Show Outline */
+#show-outline{
+    padding: 2em 1em;
+}
+#btnShowOutline {
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    background: #14454e;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+    border: 0px;
+    margin: 0;
+    text-align: center;
+}
+#main-nav {
+    visibility: hidden;
+    display: none;
+}
+#course-title {
+    visibility: visible;
+    display:block;
+    width: 80vw;
+    padding: .75em;
+    background-color: rgb(247, 247, 247);
+    font-weight: normal;
+    white-space: nowrap;
+    overflow-x:hidden;
+    text-overflow: ellipsis;
+    font-size: 1.4em;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    border-top: 1px solid rgb(211, 211, 211);
+}
+#course-nav {
+    visibility: visible;
+    display: inline;
+}
+
+
+.header-image.outer{
+    padding-top: 5em;
+    width:100%;
+    position:relative;
+    height: 100%;
+}
+
+.image-overlay{
+    height:70%; 
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position:absolute; 
+}
+
+div.header-image.outer img{
+    background-size: cover;
+    width: 100%;
+}
+
+div.header-image.inner{
+    position: absolute;
+    padding: .5em;
+    bottom: 1em;
+    top: 8em;
+    width: 97%; 
+}
+
+p.stroked{
+    text-align: left;
+    font-size: 3em; 
+    line-height: 1em;
+    color: white;
+    white-space: normal; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+p.stroked span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+span.fa.fa-angle-right{
+    float:right;
+}
+
+#course-contents-nav, #admin-tools-nav{
+    display:inline;
+    position: relative;
+}
+
+@media screen and (max-width: 360px) {
+
+    p.stroked{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+        p.stroked{
+            font-size: 2em;
+        }
+    }

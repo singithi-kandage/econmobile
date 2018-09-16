@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<!--
+	Focal Point by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+	<title>Homepage - Conestoga College</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<!-- Bootsrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Main -->
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/course1.css" />
+</head>
+
+<body class="homepage">
+
+	<div id="page-wrapper">
+
+		<div id="content-wrapper">
+
+			<p class="page-heading">Blog</p>
+
+			<!-- Tabs-->
+			<ul class="nav nav-tabs borderless-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#my-blog-pane" role="tab">My Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#blog-watch-pane" role="tab">Blog Watch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#blog-list-pane" role="tab">Blog List</a>
+				</li>
+			</ul>
+
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+
+				<!-- My Blog Pane -->
+				<div class="tab-pane active" id="my-blog-pane" role="tabpanel">
+
+					<button class="btn btn-primary course-page-button">New Entry</button>
+					<button class="btn btn-default course-page-button">Preview Blog</button>
+					<br/><br/>
+
+					<ul class="nav nav-tabs bordered" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#all-entries-pane" role="tab">All Entries</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#public-entries-pane" role="tab">Public Entries</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#private-entries-pane" role="tab">Private Entries</a>
+						</li>
+					</ul>
+
+					<div class="tab-content bordered-tab-pane">
+						<div class="tab-pane active" id="all-entries-pane" role="tabpanel">
+
+							<!-- Double bordered box -->
+							<div class="double-bordered-box outer">
+								<div class="double-bordered-box inner">
+									<p>You haven't created any blog entries. Click <b>New Entry</b> to create a new blog entry.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="tab-pane" id="public-entries-pane" role="tabpanel">
+
+							<!-- Double bordered box -->
+							<div class="double-bordered-box outer">
+								<div class="double-bordered-box inner">
+									<p>You haven't created any public blog entries. Click <b>New Entry</b> to create a new blog entry.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="tab-pane" id="private-entries-pane" role="tabpanel">
+
+							<!-- Double bordered box -->
+							<div class="double-bordered-box outer">
+								<div class="double-bordered-box inner">
+									<p>You haven't created any private blog entries. Click <b>New Entry</b> to create a new blog entry.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="tab-pane" id="blog-watch-pane" role="tabpanel">
+
+					<!-- Double bordered box -->
+					<div class="double-bordered-box outer">
+						<div class="double-bordered-box inner">
+							<p>You are not watching any blogs. You can add blogs to watch from the <b>Blog List.</b></p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Blog List Pane -->
+				<div class="tab-pane" id="blog-list-pane" role="tabpanel">
+
+					<div class="input-group">
+						<span class="input-group-addon fa fa-search" id="basic-addon1"></span>
+						<input type="text" class="form-control" placeholder="Search For..." aria-describedby="basic-addon1">
+					</div><br/>
+
+					<div class="toggle-search-options" data-toggle="collapse" data-target="#search-blogs" aria-expanded="true">
+						<a>Show Search Options</a>
+					</div><br/>
+
+					<div class="collapse" id="search-blogs" role="tabpanel" data-toggle="false" aria-labelledby="search-blogs">
+						
+						<div class="section">
+
+							<label>Search In</label>
+							<div class="row">
+								<div class="col-1">
+									<input type="checkbox" value="" checked="checked" />
+								</div>
+								<div class="col-3">
+									<p class="checkbox-label">From</p>
+								</div>
+								<div class="col-1">
+										<input type="checkbox" value="" checked="checked" />
+									</div>
+								<div class="col-3">
+									<p class="checkbox-label">Subject</p>
+								</div>
+							</div>
+							<br/>
+
+							<label>Search Users</label>
+							<div class="form-group">					
+								<div class="row">
+									<div class="col-1">
+										<input type="radio" value="" checked="checked" />
+									</div>
+									<div class="col-11">
+										<span class="checkbox-label">All Users</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-1">
+											<input type="radio" value="" />
+									</div>
+									<div class="col-11">
+										<span class="checkbox-label">Users in your Blog Watch</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-1">
+											<input type="radio" value="" />
+									</div>
+									<div class="col-11">
+										<span class="checkbox-label">Users not in your Blog Watch</span>
+									</div>
+								</div>
+							</div>
+
+							<label>Latest entry created between the dates of</label>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-1">
+											<input type="checkbox" value="" />
+									</div>
+									<div class="col-11">
+										<span class="checkbox-label">Start Date</span>
+									</div>
+								</div>
+								<div class="row">
+										<div class="offset-1 col-6">
+											<input class="form-control" type="text" value="2017-11-10" disabled />
+										</div>
+										<div class="col-5">
+											<button class="btn">Now</button>
+										</div>
+								</div>
+								<div class="row">
+										<div class="col-1">
+												<input type="checkbox" value="" />
+										</div>
+										<div class="col-11">
+											<span class="checkbox-label">End Date</span>
+										</div>
+									</div>
+									<div class="row">
+											<div class="offset-1 col-6">
+												<input class="form-control" type="text" value="2017-11-10" disabled />
+											</div>
+											<div class="col-5">
+												<button class="btn">Now</button>
+											</div>
+									</div>
+							</div>
+
+							<label>Total Entries</label>
+
+							<div class="form-group">
+								<div class="row">
+									<div class="col-1">
+										<input type="checkbox" value="" disabled/>
+									</div>
+									<div class="col-8">
+										<span class="checkbox-label">Total number of entries</span>
+									</div>
+									<div class="col-3">
+										<select class="form-control" disabled>
+											<option>>=</option>
+											<option><=</option>
+											<option>></option>
+											<option><</option>
+											<option>=</option>
+										</select>
+									</div>
+								</div>
+								<div class="offset-1 col-7">
+									<input class="form-control" type="text" disabled />
+								</div>
+								<br/>
+								<div class="row">
+									<div class="col-1">
+										<input type="checkbox" value="" disabled/>
+									</div>
+									<div class="col-8">
+										<span class="checkbox-label">Total number of comments</span>
+									</div>
+									<div class="col-3">
+										<select class="form-control" disabled>
+											<option>>=</option>
+											<option><=</option>
+											<option>></option>
+											<option><</option>
+											<option>=</option>
+										</select>
+									</div>
+								</div>
+								<div class="offset-1 col-7">
+									<input class="form-control" type="text" disabled />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button class="btn btn-default course-page-button"><span class="fa fa-envelope"></span> Course Mail</button>
+					<button class="btn btn-default course-page-button"><span class="fa fa-plus-circle"></span></button>
+					<button class="btn btn-default course-page-button"><span class="fa fa-minus-circle"></span></button>
+					<br/><br/>
+
+
+					<div class="6u 12u(mobile) group-table">
+						<section class="first">
+
+							<table class="course-page-table extended">
+								<tr>
+									<th>
+										<input type="checkbox" value="">
+									</th>
+									<th class="extra-long">Name</th>
+									<th class="extra-long">Total Entries</th>
+									<th class="extra-long">Latest Entry</th>
+									<th class="extra-long">Total Comments</th>
+									<th class="extra-long">Latest Comment</th>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" value="">
+									</td>
+									<td>
+										<a href="#">Abdula, Susan</a>
+									</td>
+									<td>1</td>
+									<td>
+										<a>Apr 3, 2016 9:45 PM</a>
+									</td>
+									<td>0</td>
+									<td></td>
+								</tr>
+							</table>
+
+						</section>
+					</div>
+
+					 <!-- Pagination Select -->
+					 <div class="pagination">
+						<div class="row">
+							<div class="col-4">
+								<p>Page:</p>
+							</div>
+							<div class="col-8">
+								<div class="form-group">
+									<select class="form-control">
+										<option>1 of 7</option>
+										<option>2 of 7</option>
+										<option>3 of 7</option>
+										<option>4 of 7</option>
+										<option>5 of 7</option>
+										<option>6 of 7</option>
+										<option>7 of 7</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Items Per Page Select-->
+					<div class="items-per-page form-group pull-right">
+						<select class="form-control">
+							<option>10 per page</option>
+							<option selected="seleced">20 per page</option>
+							<option>50 per page</option>
+							<option>100 per page</option>
+							<option>200 per page</option>
+						</select>
+					</div>
+			
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script src="js/jquery.selectorr.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-viewport.min.js"></script>
+	<script src="js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>

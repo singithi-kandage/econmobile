@@ -1,0 +1,581 @@
+<!DOCTYPE HTML>
+<!--
+	Focal Point by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+    <title>Homepage - Conestoga College</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/course1.css" />
+    <link rel="stylesheet" href="css/mail.css" />
+</head>
+
+<body class="homepage">
+
+    <div id="page-wrapper">
+
+        <div id="content-wrapper">
+        
+            <p class="page-heading">Inbox</p>
+
+        <div class="section">
+
+            <a href="mail-compose.html"><button class="btn btn-primary course-page-button" href="mail-compose.html">Compose</button></a>
+
+            <div class="dropdown">
+                <button class="btn btn-default course-page-button dropdown-toggle" type="button" data-toggle="dropdown">More Actions
+                    <span class="fa fa-angle-down"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Refresh</a>
+                    </li>
+                    <li class="top-bordered">
+                        <a href="#">Folder Management</a>
+                    </li>
+                </ul>
+            </div>
+
+            <br/>
+            <br/>
+
+            <!-- Filter By-->
+            <div class="row">
+                <div class="col-3">
+                    <label>Filter By:</label>
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <select class="form-control" id="filter">
+                            <option>All Messages</option>
+                            <option>All Course Offerings</option>
+                            <option>-------------------</option>
+                            <option>INFO2270-17F-Sec1-Operating Systems and Systems Infrastructure</option>
+                            <option>MGMT2200-17F-Sec1-IT Service Foundations</option>
+                            <option>INFO2250-17F-Sec1-Virtual Infrastructure</option>
+                            <option>INFO2260-17F-Sec1-Mobile and Messaging</option>
+                            <option>IT Network Security</option>
+                            <option>IT Programs</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Folder -->
+            <div class="row">
+                <div class="col-3">
+                    <label>Folder:</label>
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <select class="form-control" id="folder">
+                            <option value="inbox">Inbox</option>
+                            <option value="sent-mail">Sent Mail</option>
+                            <option value="drafts">Drafts</option>
+                            <option value="trash">Trash</option>
+                            <option>Address Book</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="input-group">
+                <span class="input-group-addon fa fa-search" id="basic-addon1"></span>
+                <input type="text" class="form-control" placeholder="Search For..." aria-describedby="basic-addon1">
+            </div>
+
+            <br/>
+
+            <div class="toggle-search-options" data-toggle="collapse" data-target="#search-emails" aria-expanded="true">
+                <a>Show Search Options</a>
+            </div>
+
+
+            <div class="collapse" id="search-emails" role="tabpanel" data-toggle="false" aria-labelledby="search-emails">
+                <div class="row search-options">
+                    <div class="col-4">
+                        <input type="checkbox" value="" checked="checked" />
+                        <label class="checkbox-label">From</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="checkbox" value="" checked="checked" />
+                        <label class="checkbox-label">Subject</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="checkbox" value="" />
+                        <label class="checkbox-label">Body</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mail Buttons -->
+
+        <!-- Select All-->
+        <button class="btn select-all">
+            <span class="fa fa-square-o"></span>
+        </button>
+
+        <!-- Delete-->
+        <button class="btn" id="mail-delete">
+            <span class="fa fa-trash"></span> Delete
+        </button>
+
+        <!-- Mark As -->
+        <div class="dropdown" id="mark-as">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"> Mark As
+                <span class="fa fa-caret-down"></span>
+            </button>
+            <!-- Marks As Read -->
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li id="mail-mark-as-read">
+                    <a href="#">Read</a>
+                </li>
+                <!-- Marks As Unread -->
+                <li class="top-bordered" id="mail-mark-as-unread">
+                    <a href="#">Unread</a>
+                </li>
+                <!-- Marks As Urgent -->
+                <li class="top-bordered" id="mail-mark-as-urgent">
+                    <a href="#">Urgent</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Move to -->
+        <div class="dropdown" id="move-to">
+            <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown">Move To
+                <span class="fa fa-caret-down"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                  <!-- Inbox -->
+                <li id="move-to-inbox">
+                    <a href="#">Inbox</a>
+                </li>
+                  <!-- Sent -->
+                <li class="top-bordered"  id="move-to-sent-mail">
+                    <a href="#">Sent Mail</a>
+                </li>
+                  <!-- Drafts -->
+                <li class="top-bordered"  id="move-to-drafts">
+                    <a href="#">Drafts</a>
+                </li>
+            </ul>
+        </div>
+
+        <br/>
+
+        <!-- Inbox-->
+        <div class="6u 12u(mobile) group-table" id="inbox">
+
+            <table class="course-page-table extended">
+                <tr>
+                    <th>
+                        <span class="fa fa-square-o"></span>
+                    </th>
+                    <th class="extra-long">Subject</th>
+                    <th>
+                        <span class="fa fa-exclamation sign"></span>
+                    </th>
+                    <th></th>
+                    <th>
+                        <span class="fa fa-paperclip"></span>
+                    </th>
+                    <th class="extra-long">From</th>
+                    <th class="extra-long">Date
+                        <span class="fa fa-caret-down"></span>
+                    </th>
+                    <th>Size</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Submission Receipt</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">CDEV course closing</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Submission Receipt</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Assignment Deadline update</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Readings due</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Submission Receipt</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Introduction for presentation</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Presentation outline</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Submission Receipt</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Submission Receipt</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <!-- Sent Mail -->
+        <div class="6u 12u(mobile) group-table" id="sent-mail">
+
+            <table class="course-page-table extended">
+                <tr>
+                    <th>
+                        <span class="fa fa-square-o"></span>
+                    </th>
+                    <th class="extra-long">Subject</th>
+                    <th>
+                        <span class="fa fa-exclamation sign"></span>
+                    </th>
+                    <th></th>
+                    <th>
+                        <span class="fa fa-paperclip"></span>
+                    </th>
+                    <th class="extra-long">From</th>
+                    <th class="extra-long">Date
+                        <span class="fa fa-caret-down"></span>
+                    </th>
+                    <th>Size</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Missed Class</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Project Work</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Drafts -->
+        <div class="6u 12u(mobile) group-table" id="drafts">
+
+            <table class="course-page-table extended">
+                <tr>
+                    <th>
+                        <span class="fa fa-square-o"></span>
+                    </th>
+                    <th class="extra-long">Subject</th>
+                    <th>
+                        <span class="fa fa-exclamation sign"></span>
+                    </th>
+                    <th></th>
+                    <th>
+                        <span class="fa fa-paperclip"></span>
+                    </th>
+                    <th class="extra-long">From</th>
+                    <th class="extra-long">Date
+                        <span class="fa fa-caret-down"></span>
+                    </th>
+                    <th>Size</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Questions about assignment</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">CDEV course closing</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Trash -->
+        <div class="6u 12u(mobile) group-table" id="trash">
+
+            <table class="course-page-table extended">
+                <tr>
+                    <th>
+                        <span class="fa fa-square-o"></span>
+                    </th>
+                    <th class="extra-long">Subject</th>
+                    <th>
+                        <span class="fa fa-exclamation sign"></span>
+                    </th>
+                    <th></th>
+                    <th>
+                        <span class="fa fa-paperclip"></span>
+                    </th>
+                    <th class="extra-long">From</th>
+                    <th class="extra-long">Date
+                        <span class="fa fa-caret-down"></span>
+                    </th>
+                    <th>Size</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">Submission Receipt</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="">
+                    </td>
+                    <td class="email-link">
+                        <a href="#mailPanel">CDEV course closing</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Laurie Doersam</td>
+                    <td>Nov 9, 2017 9:44 AM</td>
+                    <td>0.5 KB</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Pagination Select -->
+        <div class="pagination">
+            <div class="row">
+                <div class="col-4">
+                    <p>Page:</p>
+                </div>
+                <div class="col-8">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>1 of 7</option>
+                            <option>2 of 7</option>
+                            <option>3 of 7</option>
+                            <option>4 of 7</option>
+                            <option>5 of 7</option>
+                            <option>6 of 7</option>
+                            <option>7 of 7</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Items Per Page Select-->
+        <div class="items-per-page form-group pull-right">
+            <select class="form-control">
+                <option>10 per page</option>
+                <option selected="seleced">20 per page</option>
+                <option>50 per page</option>
+                <option>100 per page</option>
+                <option>200 per page</option>
+            </select>
+        </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.selectorr.min.js"></script>
+    <script src="js/jquery.poptrox.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-viewport.min.js"></script>
+    <script src="js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

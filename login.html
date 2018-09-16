@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Slate by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+
+<head>
+	<title>eConestoga Login</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootsrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+
+	<!-- Contact -->
+	<section id="contact" class="wrapper split">
+		<div class="inner">
+			<section>
+				<img src="img/daylight_eConestoga_logo.png">
+				<p>Sign in with your Conestoga e-mail address, i.e. example@conestogac.on.ca</p>
+				<form method="post" action="#">
+					<label class="text-danger" id="errorMessage" style="display:none;">Incorrect user ID or password. Type the correct user ID and password, and try again.</label>
+					<div class="row uniform">
+						<div class="6u 12u$(large) 6u(medium) 12u$(xsmall)">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" />
+						</div>
+						<div class="6u$ 12u$(large) 6u$(medium) 12u$(xsmall)">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" />
+						</div>
+						<div style="width:100%;">
+							<input type="button" value="Login" class="special" id="login" style="width:100%;">
+						</div>
+					</div>
+				</form>
+				<p>Sign-in to Conestoga College requires a Conestoga College e-mail address. Go to the
+					<a href="http://it.conestogac.on.ca" target="_blank">IT website</a> for more information.</p>
+				<a href="https://passwordreset.conestogac.on.ca:9251/showLogin.cc" target="_blank">Forgot Password/Unlock Account</a>
+			</section>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<p class="copyright">&copy; 2017 Conestoga College. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+		
+		//Login Validation
+		$('#login').on('touchstart', function () {
+			var email = $('#email').val();
+			var password = $('#password').val();
+
+			if ((email == "Skhurana9595" || email == "skhurana9595" || email == "Skhurana9595@conestogac.on.ca" || "skhurana9595@conestogac.on.ca") &&  password == "admin") {
+				window.location.href = "main.html";
+			}
+			else{
+				$('#errorMessage').show();
+			}
+		});
+
+	</script>
+
+
+</body>
+
+</html>

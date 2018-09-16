@@ -1,0 +1,11 @@
+* {
+    margin: 0 auto;
+}
+body {
+    background-color: rgb(78, 78, 80);
+}
+img {
+    width: 100%;
+    background-color: rgb(78, 78, 80);
+    margin-top: 8em;
+}
